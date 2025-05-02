@@ -1,180 +1,200 @@
-<!doctype html>
-<html lang="en"> 
- <head> 
-  <meta charset="UTF-8"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <title>Addons and Maps for Bedrock</title> 
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"> 
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4133858080429034" crossorigin="anonymous"></script> 
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Addons for Bedrock</title>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4133858080429034" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(to bottom, #1a1a1a, #2d2d2d);
-      color: #ffffff;
-      background-image: url('https://wallpapercave.com/wp/wp2757874.png');
-      background-size: cover;
-      background-attachment: fixed;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Press Start 2P', cursive;
+      background: linear-gradient(to bottom, #121212, #1f1f1f);
+      color: #eee;
+      padding-bottom: 100px;
     }
     header {
-      background-color: rgba(0, 0, 0, 0.7);
+      background: #0d1117;
+      padding: 20px;
       text-align: center;
-      padding: 30px;
-      border-bottom: 5px solid #00ff99;
-    }
-    header h1 {
-      font-family: 'Press Start 2P', cursive;
+      font-size: 1.8rem;
       color: #00ff99;
-      font-size: 1.5rem;
-    }
-    header p {
-      font-size: 0.9rem;
-      color: #ddd;
+      border-bottom: 2px solid #00ff99;
+      box-shadow: 0 0 15px #00ff99;
     }
     nav {
-      display: flex;
-      justify-content: center;
-      background-color: rgba(0, 0, 0, 0.8);
-      padding: 10px;
-      border-bottom: 3px solid #00ff99;
+      background-color: #1a1a1a;
+      padding: 10px 0;
+      text-align: center;
     }
     nav a {
-      color: #00ff99;
+      color: #00ccff;
       margin: 0 15px;
       text-decoration: none;
-      font-weight: bold;
-      font-family: 'Press Start 2P', cursive;
-      font-size: 0.7rem;
+      font-size: 0.9rem;
     }
-    main {
-      padding: 20px;
-      max-width: 900px;
+    nav a:hover {
+      text-decoration: underline;
+      color: #ffcc00;
+    }
+    .container {
+      max-width: 1000px;
       margin: auto;
-      background-color: rgba(0, 0, 0, 0.8);
-      border-radius: 15px;
-      box-shadow: 0 0 20px #00ff99;
-      animation: fadeIn 1s ease-in-out;
+      padding: 30px 20px;
     }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+    .section-title {
+      font-size: 1.2rem;
+      color: #ffcc00;
+      margin: 40px 0 15px;
+      border-left: 5px solid #00ccff;
+      padding-left: 10px;
     }
-    h2 {
-      font-family: 'Press Start 2P', cursive;
-      color: #00ff99;
+    .card {
+      background: #242424;
+      border: 1px solid #333;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #00ffcc33;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 20px #00ffffaa;
+    }
+    h3 {
+      color: #00e676;
+      margin-bottom: 10px;
       font-size: 1rem;
     }
-    .addon, .map {
-      background-color: #202020;
-      padding: 15px;
-      border-radius: 10px;
-      margin-bottom: 15px;
-      border: 2px solid #00ff99;
-      box-shadow: 0 0 10px #00ff99;
+    p {
+      font-size: 0.8rem;
+      margin-bottom: 10px;
     }
-    .download-btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 15px;
-      background-color: #00ff99;
-      color: #000;
+    a {
+      color: #00ccff;
       text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
+      font-size: 0.8rem;
     }
-    .ad-slot {
-      margin: 20px auto;
-      text-align: center;
+    a:hover {
+      color: #ffcc00;
     }
     footer {
+      background: #0d1117;
       text-align: center;
-      padding: 15px;
-      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px;
       color: #ccc;
       font-size: 0.8rem;
-      margin-top: 30px;
-      border-top: 3px solid #00ff99;
+      border-top: 1px solid #00ff99;
     }
-  </style> 
- </head> 
- <body> 
-  <header> 
-   <h1>ADDONS FOR BEDROCK</h1> 
-   <p>Free Minecraft Bedrock Addons and Maps. No ads. Just fun.</p> 
-  </header> 
-  <nav> <a href="#">Home</a> <a href="#addons">Addons</a> <a href="#maps">Maps</a> <a href="#contact">Contact</a> 
-  </nav> 
-  <div class="ad-slot"> 
-   <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4133858080429034" data-ad-slot="1234567890" data-ad-format="auto" data-full-width-responsive="true"></ins> 
-   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> 
-  </div> 
-  <main> 
-   <section id="addons"> 
-    <h2>Addons</h2> 
-    <div class="addon"> 
-     <h2>Anime Jutsu</h2> 
-     <p>Naruto-inspired combat addon with jutsu abilities.</p> <a href="https://www.mediafire.com/file/1y4frzkwmrkdhzl/Anime+Jutsu+update+by+DaanzMc.mcaddon.zip/file?dkey=1y4frzkwmrkdhzl" class="download-btn">Download</a> 
-    </div> 
-    <div class="addon"> 
-     <h2>Farming Block Update</h2> 
-     <p>New crops and farming features.</p> <a href="https://www.mediafire.com/file/8ygo01m2b3arogl/Farming_Block_Update_By_Yasho.mcaddon/file" class="download-btn">Download</a> 
-    </div> 
-    <div class="addon"> 
-     <h2>Ghast Expansion</h2> 
-     <p>Extra ghast variants and mechanics.</p> <a href="https://www.mediafire.com/file/gtor6y9t4sfh1yd/Ghast_Expansion_By_Yasho.mcaddon/file" class="download-btn">Download</a> 
-    </div> 
-   </section>
-   <div class="ad-slot"> 
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4133858080429034" data-ad-slot="1234567891" data-ad-format="auto" data-full-width-responsive="true"></ins> 
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> 
-   </div> 
-   <section id="maps"> 
-    <h2>Maps</h2> 
-    <div class="map"> 
-     <h2>Real Raft Survival</h2> 
-     <p>Survive the ocean with limited resources.</p> <a href="https://www.mediafire.com/file/e78m7jh0mmopvw9/Real+Raft+Survival.zip/file" class="download-btn">Download</a> 
-    </div> 
-    <div class="map"> 
-     <h2>Pirate Mashups</h2> 
-     <p>Explore the high seas and treasure islands.</p> <a href="https://www.mediafire.com/file/6phqn2wbk253auf/Pirate_Mashup_(world_template).mctemplate/file" class="download-btn">Download</a> 
-    </div> 
-    <div class="map"> 
-     <h2>Warden Expansion</h2> 
-     <p>Face the Warden in a new dark dimension.</p> <a href="https://www.mediafire.com/file/zfhbv4pvahtpxce/WARDEN_DIMENSION_(world_template).mctemplate/file" class="download-btn">Download</a> 
-    </div> 
-    <div class="map"> 
-     <h2>Moana 2</h2> 
-     <p>Adventure in the magical islands of Moana.</p> <a href="https://mega.nz/file/hpwljCqK#TD1Pa0U4gDL4Wldl-us2mmi0lZeZvz6k9AuEUOLzHPA" class="download-btn">Download</a> 
-    </div> 
-    <div class="map"> 
-     <h2>Big Foot</h2> 
-     <p>Discover the truth behind the legend.</p> <a href="https://www.mediafire.com/file/c7bib08y1ht6no7/Bigfoot+by+Panda's.mctemplate/file" class="download-btn">Download</a> 
-    </div> 
-    <div class="map"> 
-     <h2>Jurassic World</h2> 
-     <p>Dinosaurs roam in this thrilling map.</p> <a href="https://www.mediafire.com/file/ajtkq3nsorlm75x/Jurassic+World.zip/file" class="download-btn">Download</a> 
-    </div> 
-    <div class="map"> 
-     <h2>Grave Danger 2</h2> 
-     <p>Survive a spooky and dangerous world.</p> <a href="https://www.mediafire.com/file/53l0bwvm34vnebs/Grave_Danger_2_%28world_template%29_by_Noir.mctemplate/file" class="download-btn">Download</a> 
-    </div> 
-    <div class="map"> 
-     <h2>Simple Furniture</h2> 
-     <p>Decorate your house with stylish furniture.</p> <a href="https://www.mediafire.com/file/e5dyughhmgxh5hs/SIMPLE_FURNITURE_%28MDF%29.mctemplate/file" class="download-btn">Download</a> 
-    </div> 
-   </section> 
-   <div class="ad-slot"> 
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4133858080429034" data-ad-slot="1234567892" data-ad-format="auto" data-full-width-responsive="true"></ins> 
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> 
-   </div> 
-   <section id="contact"> 
-    <h2>Contact</h2> 
-    <p>Email me for submissions or issues: <strong>maybecallmefire@gmail.com</strong></p> 
-   </section> 
-  </main> 
-  <footer>
-    © 2025 Addons and Maps for Bedrock. All rights reserved. 
-  </footer> 
- </body>
+  </style>
+</head>
+<body>
+  <header>Addons for Bedrock</header>
+  <nav>
+    <a href="#addons">Addons</a>
+    <a href="#maps">Maps</a>
+    <a href="mailto:maybecallmefire@gmail.com">Contact</a>
+  </nav>
+  <div class="container">
+    <div class="section-title" id="addons">Addons</div><div class="card">
+  <h3>Nova Bloom Shader</h3>
+  <p>Enhances your Minecraft world with bloom and lighting shaders.</p>
+  <a href="https://www.mediafire.com/file/dup6ek67gwekf2c/Nova_Bloom_Shader.mcpack.zip/file">Download</a>
+</div>
+
+<div class="card">
+  <h3>Furniture 1.4</h3>
+  <p>Adds usable furniture to Minecraft Bedrock.</p>
+  <a href="https://www.mediafire.com/file/uh8ay02socnwixi/Furniture_1.4.mcaddon/file">Download</a>
+</div>
+
+<div class="card">
+  <h3>Naturalist 3.0</h3>
+  <p>New animals and natural environment improvements.</p>
+  <a href="https://drive.google.com/file/d/11CDzkq2Wcuieq8akTQ-2P_2ZY3E23Qj2/view">Download</a>
+</div>
+
+<div class="card">
+  <h3>Anime Jutsu</h3>
+  <p>Anime-inspired powers and jutsu abilities.</p>
+  <a href="https://www.mediafire.com/file/1y4frzkwmrkdhzl/Anime+Jutsu+update+by+DaanzMc.mcaddon.zip/file">Download</a>
+</div>
+
+<div class="card">
+  <h3>Farming Block Update</h3>
+  <p>Improves Minecraft's farming with new blocks.</p>
+  <a href="https://www.mediafire.com/file/8ygo01m2b3arogl/Farming_Block_Update_By_Yasho.mcaddon/file">Download</a>
+</div>
+
+<div class="card">
+  <h3>Ghast Expansion</h3>
+  <p>New ghast mobs and nether features.</p>
+  <a href="https://www.mediafire.com/file/gtor6y9t4sfh1yd/Ghast_Expansion_By_Yasho.mcaddon/file">Download</a>
+</div>
+
+<div class="card">
+  <h3>Actions and Stuff 1.3</h3>
+  <p>Extra player actions and new custom items.</p>
+  <a href="https://drive.google.com/file/d/1-18z1Z2d1YVxdIm52YpABpsAOOZ2GG21/view">Download</a>
+</div>
+
+<div class="section-title" id="maps">Maps</div>
+
+<div class="card">
+  <h3>Real Raft Survival</h3>
+  <p>Survive on a raft in the middle of the ocean.</p>
+  <a href="https://www.mediafire.com/file/e78m7jh0mmopvw9/Real+Raft+Survival.zip/file">Download</a>
+</div>
+
+<div class="card">
+  <h3>Pirate Mashups</h3>
+  <p>Pirate-themed adventure with ships and treasure.</p>
+  <a href="https://www.mediafire.com/file/6phqn2wbk253auf/Pirate_Mashup_(world_template).mctemplate/file">Download</a>
+</div>
+
+<div class="card">
+  <h3>Warden Expansion</h3>
+  <p>Explore a mysterious Warden-themed dimension.</p>
+  <a href="https://www.mediafire.com/file/zfhbv4pvahtpxce/WARDEN_DIMENSION_(world_template).mctemplate/file">Download</a>
+</div>
+
+<div class="card">
+  <h3>Moana 2</h3>
+  <p>Explore a tropical island inspired by Moana.</p>
+  <a href="https://mega.nz/file/hpwljCqK#TD1Pa0U4gDL4Wldl-us2mmi0lZeZvz6k9AuEUOLzHPA">Download</a>
+</div>
+
+<div class="card">
+  <h3>Big Foot</h3>
+  <p>Hunt Bigfoot through dark forests and terrain.</p>
+  <a href="https://www.mediafire.com/file/c7bib08y1ht6no7/Bigfoot+by+Panda's.mctemplate/file">Download</a>
+</div>
+
+<div class="card">
+  <h3>Jurassic World</h3>
+  <p>A dino-themed survival adventure.</p>
+  <a href="https://www.mediafire.com/file/ajtkq3nsorlm75x/Jurassic+World.zip/file">Download</a>
+</div>
+
+<div class="card">
+  <h3>Grave Danger 2</h3>
+  <p>Challenge dungeons and traps in the dark.</p>
+  <a href="https://www.mediafire.com/file/53l0bwvm34vnebs/Grave_Danger_2_%28world_template%29_by_Noir.mctemplate/file">Download</a>
+</div>
+
+<div class="card">
+  <h3>Simple Furniture</h3>
+  <p>Aesthetic and minimal furniture builds.</p>
+  <a href="https://www.mediafire.com/file/e5dyughhmgxh5hs/SIMPLE_FURNITURE_%28MDF%29.mctemplate/file">Download</a>
+</div>
+
+  </div>  <footer>
+    Contact: maybecallmefire@gmail.com
+  </footer>
+</body>
 </html>
